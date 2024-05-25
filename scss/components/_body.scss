@@ -1,0 +1,9 @@
+body {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: minmax(80px, auto) minmax(900px, 5fr) minmax(120px, auto);
+    background-color: map-get($color, 'background_color');
+    color: map-get($color, 'font_color');
+
+
+}

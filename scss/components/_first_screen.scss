@@ -1,0 +1,30 @@
+.first_screen {
+    width: 100%;
+    height: 640px;
+
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2FsyM6XbO.jpg&f=1&nofb=1&ipt=afb0c50839cd4d8c46158788f1d2abcf16d6dff805d52d1cd1a1da5690c6f9a7&ipo=images');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &_text_box {
+        padding-left: 20%;
+        padding-top: 300px;
+
+        .first_screen_head {
+            // @extend .head_text
+            @include font_formated($font_family, 75px, 800, $font_color)
+        }
+
+        .first_screen_desc {
+            // @extend .desc_text;
+            @include font_formated ("Roboto", 25px, 400, red);
+            margin: 30px 0;
+        }
+
+        .first_screen_btn {
+            // @extend .btn
+            @include btn_styled(teal, red, 3px);
+            @include font_formated($font_family, 24px, 600, rgb(74, 5, 86))
+        }
+    }
+}

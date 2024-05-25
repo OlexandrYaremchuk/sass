@@ -1,0 +1,17 @@
+.btn {
+    background-color: map-get($color, 'accent_color');
+    color: map-get($color, 'background_color');
+    border-radius: map-get($raduis, 'btn_raduis');
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.head_text {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.desc_text {
+    font-size: 14px;
+}

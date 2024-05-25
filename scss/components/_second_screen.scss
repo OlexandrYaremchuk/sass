@@ -1,0 +1,34 @@
+.second_screen {
+    width: 80%;
+    margin: 50px auto;
+
+    &_head {
+        @extend .head_text;
+        width: 100%;
+        text-align: center;
+    }
+
+    &_stat_list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 50px;
+
+        li {
+            justify-self: center;
+            border-radius: $card_border_radius;
+            border: 1px solid $font_color;
+            background-color: grey;
+            padding: 10px 20px;
+        }
+    }
+
+    &_desc {
+        @extend .desc_text;
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 50px;
+        text-align: center;
+    }
+}

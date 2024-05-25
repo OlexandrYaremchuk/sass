@@ -1,0 +1,9 @@
+footer {
+    width: 100%;
+    border-top: 1px solid $font_color;
+
+    .footer_btn {
+        // @extend .btn
+        @include btn_styled(tomato, green, 10px)
+    }
+}
